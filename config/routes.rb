@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :multigames
+
   resources :singlegames
 
   get 'game/single' 
@@ -19,6 +21,12 @@ Rails.application.routes.draw do
     post 'move' => :move
     post 'undo' => :undo
     post 'reset' => :reset
+  end
+
+
+  controller :multigames do
+    post 'mmove' => :mmove
+    post 'add_player' => :add_player
   end
 
   # Example of regular route:

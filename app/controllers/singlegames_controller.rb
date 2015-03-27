@@ -147,4 +147,6 @@ private
     def singlegame_params
       params.require(:singlegame).permit(:status, :turn)
     end
+
+    
   end

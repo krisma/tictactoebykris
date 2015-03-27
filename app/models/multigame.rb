@@ -1,13 +1,13 @@
-class Singlegame < ActiveRecord::Base
+class Multigame < ActiveRecord::Base
 	def heading
 	cur = self.status[self.turn * 9, 9]
       if self.turn % 2 == 0
-        player = "B"
+        player = self.player2
       else
-        player = "A"
+        player = self.player1
       end
       if check_win(cur)
-        return "Winner: Player " + player
+        return "Winner: " + player
      
       #flash[:notice] = @singlegame.status
       elsif not cur.include? "0" 

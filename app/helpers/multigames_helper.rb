@@ -1,0 +1,2 @@
+module MultigamesHelper
+end

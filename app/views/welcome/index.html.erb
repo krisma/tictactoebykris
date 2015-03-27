@@ -23,7 +23,11 @@
 				<% @singlegame.turn = 0 %>
 				<% @singlegame.save %>
 				<li><%= link_to "Quick Start", @singlegame %></li>
-				<li><%= link_to "Multiplayer", controller: "game", action: "multi"%></li>
+				<% @multigame = Multigame.new %>
+				<% @multigame.status = "000000000" %>
+				<% @multigame.turn = 0 %>
+				<% @multigame.save %>
+				<li><%= link_to "Multiplayer", @multigame %></li>
 			</ul>
 			</div>
 

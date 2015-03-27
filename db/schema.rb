@@ -11,7 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150327050327) do
+ActiveRecord::Schema.define(version: 20150327193424) do
+
+  create_table "multigames", force: true do |t|
+    t.string   "status"
+    t.integer  "turn"
+    t.string   "player1"
+    t.string   "player2"
+    t.integer  "player1_id"
+    t.integer  "player2_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "singlegames", force: true do |t|
     t.string   "status"

@@ -1,0 +1,31 @@
+<h1>Listing multigames</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Status</th>
+      <th>Turn</th>
+      <th>Player1</th>
+      <th>Player2</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @multigames.each do |multigame| %>
+      <tr>
+        <td><%= multigame.status %></td>
+        <td><%= multigame.turn %></td>
+        <td><%= multigame.player1 %></td>
+        <td><%= multigame.player2 %></td>
+        <td><%= link_to 'Show', multigame %></td>
+        <td><%= link_to 'Edit', edit_multigame_path(multigame) %></td>
+        <td><%= link_to 'Destroy', multigame, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Multigame', new_multigame_path %>

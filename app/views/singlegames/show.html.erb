@@ -1,20 +1,5 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-	<strong>Status:</strong>
-	<%= @singlegame.status %>
-</p>
-
-<p>
-	<strong>Turn:</strong>
-	<%= @singlegame.turn %>
-</p>
-
-<%= link_to 'Edit', edit_singlegame_path(@singlegame) %> |
-<%= link_to 'Back', singlegames_path %>
-
 <div class="container" id="board-container">
-	<h1>Tic-Tac-Toe</h1>
+	<h1><%= @singlegame.heading %></h1>
 	<% for $i in 1..3 %>
 	<div class="row">
 		<% for $j in 1..3 %>

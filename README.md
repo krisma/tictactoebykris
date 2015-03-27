@@ -1,39 +1,16 @@
-# ruby-getting-started
+# Tic-tac-toe by Kris
+Copyrighy 2015, Kris
 
-A barebones Rails app, which can easily be deployed to Heroku.
+Opensources:
 
-This application support the [Getting Started with Ruby on Heroku](https://devcenter.heroku.com/articles/getting-started-with-ruby) article - check it out.
+Bootstrap;
 
-## Running Locally
+end-of-list.
 
-Make sure you have Ruby installed.  Also, install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
+Instruction:
+For two player playing alternatively on the same browser, click "Nes Game" -> "Quick Start"
 
-```sh
-$ git clone git@github.com:heroku/ruby-getting-started.git
-$ cd ruby-getting-started
-$ bundle install
-$ rake db:create db:migrate
-$ foreman start web
-```
-
-Your app should now be running on [localhost:5000](http://localhost:5000/).
-
-## Deploying to Heroku
-
-```sh
-$ heroku create
-$ git push heroku master
-$ heroku run rake db:migrate
-$ heroku open
-```
-
-## Documentation
-
-For more information about using Ruby on Heroku, see these Dev Center articles:
-
-- [Ruby on Heroku](https://devcenter.heroku.com/categories/ruby)
-
-## Ideas
-
-I first think about how to create a multiplayer game, in wich two browsers should refresh to show changes made by the opponent.
-Since Rails is server-side, and has no control over the browsers, I need to refresh periodically by including a meta tag
+For two player playing on different browsers or devicesm click "New Game" -> "Multiplayer"
+then input a nickname you like, and click "Submit your name"
+then a link will occur and it will bring your friend into the same game. 
+Then player who starts the game plays first
