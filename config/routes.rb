@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  resources :singlegames
+
+  get 'game/single' 
+
+  get 'game/multi'
+
+  get 'welcome/index'
+
   resources :widgets
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -7,6 +15,9 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
 
   root 'welcome#index'
+  controller :singlegames do
+    post 'move' => :move
+  end
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

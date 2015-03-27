@@ -1,0 +1,17 @@
+ .col-lg-4 {
+	height: 100px;
+	width: 100px;
+	border-color: white;
+	border-style: solid;
+	padding: 0px;
+	background-color: grey;
+	border: 2px inset;
+
+}
+#board-container {
+	margin: 20px;
+}
+.cell {
+	height: 100px;
+	width: 100px;
+}

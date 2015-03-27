@@ -1,0 +1,25 @@
+<%= form_for(@singlegame) do |f| %>
+  <% if @singlegame.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@singlegame.errors.count, "error") %> prohibited this singlegame from being saved:</h2>
+
+      <ul>
+      <% @singlegame.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :status %><br>
+    <%= f.text_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :turn %><br>
+    <%= f.number_field :turn %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

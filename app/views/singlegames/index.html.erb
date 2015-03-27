@@ -1,0 +1,27 @@
+<h1>Listing singlegames</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Status</th>
+      <th>Turn</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @singlegames.each do |singlegame| %>
+      <tr>
+        <td><%= singlegame.status %></td>
+        <td><%= singlegame.turn %></td>
+        <td><%= link_to 'Show', singlegame %></td>
+        <td><%= link_to 'Edit', edit_singlegame_path(singlegame) %></td>
+        <td><%= link_to 'Destroy', singlegame, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Singlegame', new_singlegame_path %>

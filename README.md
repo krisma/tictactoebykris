@@ -33,3 +33,7 @@ For more information about using Ruby on Heroku, see these Dev Center articles:
 
 - [Ruby on Heroku](https://devcenter.heroku.com/categories/ruby)
 
+## Ideas
+
+I first think about how to create a multiplayer game, in wich two browsers should refresh to show changes made by the opponent.
+Since Rails is server-side, and has no control over the browsers, I need to refresh periodically by including a meta tag
