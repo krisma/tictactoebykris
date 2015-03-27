@@ -30,4 +30,10 @@
 		<% end %>
 	</div>
 	<% end %>
+	<%= form_for :singlegame, url: { controller: "singlegames", action: "undo", params: { id: @singlegame.id } } do |f|  %>
+		<%= f.submit "Undo", :class => 'btn btn-default btn-lg', :id => 'btn1' %>
+	<% end %>
+	<%= form_for :singlegame, url: { controller: "singlegames", action: "reset", params: { id: @singlegame.id } } do |f|  %>
+		<%= f.submit "Reset", :class => 'btn btn-default btn-lg', :id => 'btn1', :data => { confirm: 'Reset?'}%>
+	<% end %>
 </div>

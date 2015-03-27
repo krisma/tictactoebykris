@@ -17,6 +17,8 @@ Rails.application.routes.draw do
   root 'welcome#index'
   controller :singlegames do
     post 'move' => :move
+    post 'undo' => :undo
+    post 'reset' => :reset
   end
 
   # Example of regular route:

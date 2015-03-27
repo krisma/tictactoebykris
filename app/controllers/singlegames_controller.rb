@@ -1,5 +1,5 @@
 class SinglegamesController < ApplicationController
-  before_action :set_singlegame, only: [:show, :edit, :update, :destroy, :move]
+  before_action :set_singlegame, only: [:show, :edit, :update, :destroy, :move, :undo, :reset]
 
   # GET /singlegames
   # GET /singlegames.json
@@ -60,6 +60,38 @@ class SinglegamesController < ApplicationController
     end
   end
 
+  def undo
+    if @singlegame.turn == 0
+      respond_to do |format|
+        format.html { redirect_to @singlegame }
+      end
+      return
+    end
+    if @singlegame.turn == 1
+      @singlegame.status = "000000000"
+      @singlegame.turn = 0
+      @singlegame.save
+      respond_to do |format|
+        format.html { redirect_to @singlegame }
+      end
+      return
+    end
+    @singlegame.status = @singlegame.status[0..-10]
+    @singlegame.turn -= 1
+    @singlegame.save
+    respond_to do |format|
+      format.html { redirect_to @singlegame }
+    end
+  end
+
+  def reset
+    @singlegame.status = "000000000"
+    @singlegame.turn = 0
+    @singlegame.save
+    respond_to do |format|
+      format.html { redirect_to @singlegame }
+    end
+  end
   def move
     cur = @singlegame.status[@singlegame.turn * 9, 9]
     if @singlegame.turn >= 9 or check_win(cur)
@@ -70,8 +102,7 @@ class SinglegamesController < ApplicationController
       return
     end
     if @singlegame.turn % 2 == 0
-      player = "A" 
-
+      player = "A"
     else
       player = "B"
     end
@@ -86,15 +117,15 @@ class SinglegamesController < ApplicationController
       if check_win(cur)
         flash[:notice] = "Winner: Player " + player
       #flash[:notice] = @singlegame.status
-    else if not cur.include? "0" 
-      flash[:notice] = "Draw"
-    end 
+      elsif not cur.include? "0" 
+        flash[:notice] = "Draw"
+      end 
+    end
+  
 
+  respond_to do |format|
+    format.html { redirect_to @singlegame }
   end
-end
-respond_to do |format|
-  format.html { redirect_to @singlegame }
-end
 end
 
 private
