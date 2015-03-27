@@ -50174,3 +50174,327 @@ Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-27 12:20:24 
 
 
 Started GET "/assets/singlegames.js?body=1" for 127.0.0.1 at 2015-03-27 12:20:24 -0700
+
+
+Started GET "/singlegames/51" for 127.0.0.1 at 2015-03-27 12:23:38 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SinglegamesController#show as HTML
+  Parameters: {"id"=>"51"}
+  [1m[35mSinglegame Load (0.5ms)[0m  SELECT  "singlegames".* FROM "singlegames"  WHERE "singlegames"."id" = ? LIMIT 1  [["id", 51]]
+  Rendered singlegames/show.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 247ms (Views: 216.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/game.css?body=1" for 127.0.0.1 at 2015-03-27 12:23:38 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-27 12:23:38 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-03-27 12:23:38 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-03-27 12:23:38 -0700
+
+
+Started GET "/assets/singlegames.css?body=1" for 127.0.0.1 at 2015-03-27 12:23:38 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-27 12:23:38 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-03-27 12:23:38 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-27 12:23:38 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-27 12:23:38 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-27 12:23:38 -0700
+
+
+Started GET "/assets/widgets.css?body=1" for 127.0.0.1 at 2015-03-27 12:23:38 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-03-27 12:23:38 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-27 12:23:38 -0700
+
+
+Started GET "/assets/singlegames.js?body=1" for 127.0.0.1 at 2015-03-27 12:23:38 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-03-27 12:23:38 -0700
+
+
+Started GET "/assets/game.js?body=1" for 127.0.0.1 at 2015-03-27 12:23:38 -0700
+
+
+Started GET "/assets/widgets.js?body=1" for 127.0.0.1 at 2015-03-27 12:23:38 -0700
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2015-03-27 12:23:40 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "singlegames" ("created_at", "status", "turn", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2015-03-27 19:23:40.983518"], ["status", "000000000"], ["turn", 0], ["updated_at", "2015-03-27 19:23:40.983518"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  Rendered welcome/index.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 302ms (Views: 268.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2015-03-27 12:23:54 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "singlegames" ("created_at", "status", "turn", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2015-03-27 19:23:54.680558"], ["status", "000000000"], ["turn", 0], ["updated_at", "2015-03-27 19:23:54.680558"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  Rendered welcome/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 101ms (Views: 98.9ms | ActiveRecord: 1.7ms)
+
+
+
+Started GET "/assets/singlegames.css?body=1" for 127.0.0.1 at 2015-03-27 12:23:54 -0700
+
+Started GET "/assets/game.css?body=1" for 127.0.0.1 at 2015-03-27 12:23:54 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-03-27 12:23:54 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-27 12:23:54 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-03-27 12:23:54 -0700
+
+
+Started GET "/assets/widgets.css?body=1" for 127.0.0.1 at 2015-03-27 12:23:54 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-27 12:23:54 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-27 12:23:54 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-27 12:23:54 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-27 12:23:54 -0700
+
+
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-03-27 12:23:54 -0700
+Started GET "/assets/singlegames.js?body=1" for 127.0.0.1 at 2015-03-27 12:23:54 -0700
+
+
+Started GET "/assets/game.js?body=1" for 127.0.0.1 at 2015-03-27 12:23:54 -0700
+
+
+Started GET "/assets/widgets.js?body=1" for 127.0.0.1 at 2015-03-27 12:23:54 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-03-27 12:23:54 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-03-27 12:23:54 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-27 12:23:54 -0700
+
+
+Started GET "/singlegames/53" for 127.0.0.1 at 2015-03-27 12:23:57 -0700
+Processing by SinglegamesController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mSinglegame Load (0.2ms)[0m  [1mSELECT  "singlegames".* FROM "singlegames"  WHERE "singlegames"."id" = ? LIMIT 1[0m  [["id", 53]]
+  Rendered singlegames/show.html.erb within layouts/application (58.8ms)
+Completed 200 OK in 226ms (Views: 221.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/singlegames/53" for 127.0.0.1 at 2015-03-27 12:24:04 -0700
+Processing by SinglegamesController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[35mSinglegame Load (0.1ms)[0m  SELECT  "singlegames".* FROM "singlegames"  WHERE "singlegames"."id" = ? LIMIT 1  [["id", 53]]
+  Rendered singlegames/show.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 209ms (Views: 207.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/game.css?body=1" for 127.0.0.1 at 2015-03-27 12:24:04 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-27 12:24:04 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-27 12:24:04 -0700
+
+
+Started GET "/assets/widgets.css?body=1" for 127.0.0.1 at 2015-03-27 12:24:04 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-03-27 12:24:04 -0700
+
+
+Started GET "/assets/singlegames.css?body=1" for 127.0.0.1 at 2015-03-27 12:24:04 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-27 12:24:04 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-03-27 12:24:04 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-27 12:24:04 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-03-27 12:24:04 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-27 12:24:04 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-03-27 12:24:04 -0700
+
+
+Started GET "/assets/singlegames.js?body=1" for 127.0.0.1 at 2015-03-27 12:24:04 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-03-27 12:24:04 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-27 12:24:04 -0700
+
+
+Started GET "/assets/widgets.js?body=1" for 127.0.0.1 at 2015-03-27 12:24:04 -0700
+
+
+Started GET "/assets/game.js?body=1" for 127.0.0.1 at 2015-03-27 12:24:04 -0700
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2015-03-27 12:24:06 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "singlegames" ("created_at", "status", "turn", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2015-03-27 19:24:06.125112"], ["status", "000000000"], ["turn", 0], ["updated_at", "2015-03-27 19:24:06.125112"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  Rendered welcome/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 83ms (Views: 80.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/singlegames/53" for 127.0.0.1 at 2015-03-27 12:24:29 -0700
+Processing by SinglegamesController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mSinglegame Load (0.2ms)[0m  [1mSELECT  "singlegames".* FROM "singlegames"  WHERE "singlegames"."id" = ? LIMIT 1[0m  [["id", 53]]
+  Rendered singlegames/show.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 122ms (Views: 119.1ms | ActiveRecord: 0.2ms)
+
+
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-03-27 12:24:29 -0700
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-27 12:24:29 -0700
+
+
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-03-27 12:24:29 -0700
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-03-27 12:24:29 -0700
+
+
+Started GET "/assets/game.css?body=1" for 127.0.0.1 at 2015-03-27 12:24:29 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-27 12:24:29 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-27 12:24:29 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-27 12:24:29 -0700
+
+
+Started GET "/assets/game.js?body=1" for 127.0.0.1 at 2015-03-27 12:24:29 -0700
+
+
+Started GET "/assets/singlegames.js?body=1" for 127.0.0.1 at 2015-03-27 12:24:29 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-03-27 12:24:29 -0700
+
+
+Started GET "/assets/widgets.js?body=1" for 127.0.0.1 at 2015-03-27 12:24:29 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-03-27 12:24:29 -0700
+
+
+Started GET "/assets/singlegames.css?body=1" for 127.0.0.1 at 2015-03-27 12:24:29 -0700
+
+
+Started GET "/assets/widgets.css?body=1" for 127.0.0.1 at 2015-03-27 12:24:29 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-27 12:24:29 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-27 12:24:29 -0700
+
+
+Started GET "/singlegames/53" for 127.0.0.1 at 2015-03-27 12:24:53 -0700
+Processing by SinglegamesController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mSinglegame Load (0.3ms)[0m  [1mSELECT  "singlegames".* FROM "singlegames"  WHERE "singlegames"."id" = ? LIMIT 1[0m  [["id", 53]]
+  Rendered singlegames/show.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 156ms (Views: 151.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/game.css?body=1" for 127.0.0.1 at 2015-03-27 12:24:53 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-27 12:24:53 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-03-27 12:24:53 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-27 12:24:53 -0700
+
+
+Started GET "/assets/singlegames.css?body=1" for 127.0.0.1 at 2015-03-27 12:24:53 -0700
+
+
+Started GET "/assets/widgets.css?body=1" for 127.0.0.1 at 2015-03-27 12:24:53 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-27 12:24:53 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-27 12:24:53 -0700
+
+
+Started GET "/assets/game.js?body=1" for 127.0.0.1 at 2015-03-27 12:24:53 -0700
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-03-27 12:24:53 -0700
+
+
+Started GET "/assets/singlegames.js?body=1" for 127.0.0.1 at 2015-03-27 12:24:53 -0700
+
+
+Started GET "/assets/widgets.js?body=1" for 127.0.0.1 at 2015-03-27 12:24:53 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-03-27 12:24:53 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-03-27 12:24:53 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-27 12:24:53 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-27 12:24:53 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-03-27 12:24:53 -0700
