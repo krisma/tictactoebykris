@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 20150327193424) do
   create_table "singlegames", force: true do |t|
     t.string   "status"
     t.integer  "turn"
+    t.string   "winner"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

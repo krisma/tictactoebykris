@@ -61,6 +61,14 @@ class SinglegamesController < ApplicationController
   end
 
   def undo
+    if not @singlegame.winner.nil?
+      flash[:notice] = "Game finished"
+      respond_to do |format|
+        format.html { redirect_to @singlegame }
+      end
+      return
+    end
+
     if @singlegame.turn == 0
       respond_to do |format|
         format.html { redirect_to @singlegame }
@@ -78,6 +86,7 @@ class SinglegamesController < ApplicationController
     end
     @singlegame.status = @singlegame.status[0..-10]
     @singlegame.turn -= 1
+    @singlegame.winner = nil
     @singlegame.save
     respond_to do |format|
       format.html { redirect_to @singlegame }
@@ -90,6 +99,12 @@ class SinglegamesController < ApplicationController
     @singlegame.save
     respond_to do |format|
       format.html { redirect_to @singlegame }
+    end
+  end
+  def list
+    @singlegames = Singlegame.where("singlegames.winner IS NOT NULL")
+    respond_to do |format|
+      format.html { render "list_win" }
     end
   end
   def move
@@ -116,9 +131,13 @@ class SinglegamesController < ApplicationController
 
       if check_win(cur)
         flash[:notice] = "Winner: Player " + player
+        @singlegame.winner = player
+        @singlegame.save
       #flash[:notice] = @singlegame.status
       elsif not cur.include? "0" 
         flash[:notice] = "Draw"
+        @singlegame.winner = "D"
+        @singlegame.save
       end 
     end
   

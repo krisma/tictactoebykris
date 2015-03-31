@@ -3,12 +3,8 @@ Rails.application.routes.draw do
 
   resources :singlegames
 
-  get 'game/single' 
-
-  get 'game/multi'
-
   get 'welcome/index'
-
+  
   resources :widgets
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -21,6 +17,7 @@ Rails.application.routes.draw do
     post 'move' => :move
     post 'undo' => :undo
     post 'reset' => :reset
+    get 'list' => :list
   end
 
 
